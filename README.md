@@ -1,5 +1,5 @@
 # exercise-app
-An Android application with standard exercise application functionality. 
+An Android application with standard exercise application functionality developed in Java with Android Studio. 
 
 This application allows a user to create and save a profile and log and track physical activity. 
 
