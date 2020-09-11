@@ -1,0 +1,107 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/log"
+        android:layout_width="330dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:alpha="0.7"
+        android:background="@drawable/log_view"
+        android:ems="10">
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textColor="@color/presetDeepBlue"
+            android:textSize="11pt"
+            android:id="@+id/log_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="start"
+            android:textColor="@color/presetLightBlue"
+            android:textSize="7pt"
+            android:id="@+id/log_distance"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/log_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="start"
+            android:textColor="@color/presetLightBlue"
+            android:textSize="7pt"
+            android:id="@+id/log_duration"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/log_distance"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="start"
+            android:textColor="@color/presetLightBlue"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:id="@+id/log_date"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/log_title"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/log_distance"
+            android:layout_toRightOf="@+id/log_distance"
+            android:ems="10"
+            />
+
+        <TextView
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="start"
+            android:textColor="@color/presetLightBlue"
+            android:textSize="7pt"
+            android:id="@+id/log_time"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/log_date"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/log_duration"
+            android:layout_toRightOf="@+id/log_duration"
+            android:ems="10"
+            android:text = ""/>
+         <TextView
+             android:gravity="start"
+             android:textColor="@color/presetLightBlue"
+             android:textSize="8pt"
+             android:id="@+id/log_id"
+             android:layout_width="150dp"
+             android:layout_height="26dp"
+             android:layout_below="@+id/log_date"
+             android:layout_marginStart="0dp"
+             android:layout_marginLeft="0dp"
+             android:layout_marginTop="0dp"
+             android:layout_toEndOf="@+id/log_duration"
+             android:layout_toRightOf="@+id/log_duration"
+             android:ems="10"
+             android:text = ""
+             android:visibility="gone"/>
+
+
+    </RelativeLayout>

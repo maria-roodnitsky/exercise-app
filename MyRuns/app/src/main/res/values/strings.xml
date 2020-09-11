@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">MyRuns</string>
+    <string name="enter_password">password</string>
+    <string name="enter_email">email</string>
+    <string name="sign_up">sign up</string>
+    <string name="sign_in">sign in</string>
+    <string name="myruns">MyRuns</string>
+    <string name="error_field_required">Field required!</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="name">name</string>
+    <string name="maleButtonText">Male</string>
+    <string name="femaleButtonText">Female</string>
+    <string name="nonBinaryButtonText">Nonbinary</string>
+    <string name="majorHint">major</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="phoneNumber">phone number</string>
+    <string name="classYear">class year</string>
+    <string name="submit">save</string>
+    <string name="error_gender">Select a gender!</string>
+    <string name="error_invalid_name">Try a new name!</string>
+    <string name="error_invalid_email">Try a new email!</string>
+    <string name="error_invalid_password">Try a new (and improved?) password!</string>
+    <string name="error_invalid_password_login">Invalid password!</string>
+    <string name="error_invalid_major">Try new major (but avoid art history)!</string>
+    <string name="error_invalid_phone">Try new phone number!</string>
+    <string name="error_invalid_class">Try being born in this century!</string>
+    <string name="error_invalid_email_login">Invalid email!</string>
+    <string name="duration">Duration</string>
+    <string name="distance">Distance</string>
+    <string name="heartbeat">Heartbeat</string>
+    <string name="calories">Calories</string>
+    <string name="comment">Comments</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="profile_photo">Profile Photo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_type">Input Type</string>
+    <string name="activity_type">Activity Type</string>
+    <string name="settings">Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="application_settings">Application Settings</string>
+    <string name="edit_profile_caption">Edit your profile!</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="posting_records">Posting your records anonymously!</string>
+    <string name="unit_preference">Unit Preference</string>
+    <string name="unit_kilometers">kilometers</string>
+    <string name="unit_summary">Selects Running Units!</string>
+    <string name="additonal_settings">Additional Settings</string>
+    <string name="webpage_preference">Webpage</string>
+    <string name="webpage_url">http://cs.dartmouth.edu/~campbell/cs65/cs65.html</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_summary">Enter your feedback!</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="Save">Save</string>
+    <string name="LOG_MANUAL">Log Manual Activity</string>
+    <string name="Delete">Delete</string>
+    <string name="EXERCISE">Exercise</string>
+    <string name="history">Exercise Log</string>
+    <string name="new_activity">New Workout</string>
+    <string name="title_activity_map">Map</string>
+    <string name="start_counter">0</string>
+
+</resources>

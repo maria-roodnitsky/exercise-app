@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:titleTextColor">@color/paletteTurquoise</item>
+        <item name="android:subtitleTextColor">@color/paletteTurquoise</item>
+        <item name="actionMenuTextColor">@color/paletteTurquoise</item>
+    </style>
+
+    <!-- Settings Theme -->
+    <style name="SettingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/presetDeepBlue</item>
+        <item name="actionMenuTextColor">@color/paletteTurquoise</item>
+    </style>
+
+    <!-- Settings Theme -->
+    <style name="ManualActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/presetDeepBlue</item>
+        <item name="android:textColorSecondary">@color/presetDeepBlue</item>
+        <item name="titleTextColor">@color/presetDeepBlue</item>
+        <item name="actionMenuTextColor">@color/presetDeepBlue</item>
+    </style>
+
+
+    <style name="None" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/presetLightBlue</item>
+        <item name="colorPrimaryDark">@color/presetDeepBlue</item>
+        <item name="colorAccent">@color/paletteTurquoise</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent = "ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionOverflowButtonStyle">@style/DotsTheme</item>
+        <item name="android:itemBackground">@color/presetDeepBlue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DotsTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <!-- <item name="android:tint">@color/colorDeepSea</item> -->
+        <item name="android:src">@drawable/overflowdots35</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/paletteTurquoise</item>
+        <item name="backgroundColor">@color/paletteTurquoise</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+</resources>

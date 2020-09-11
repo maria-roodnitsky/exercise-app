@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml for start fragment-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".Fragment.StartFragment">
+
+
+    <TextView
+        android:id="@+id/history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="5"
+        android:text="@string/new_activity"
+        android:textColor="@color/white"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toTopOf="@+id/input_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/input_view"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="5"
+        android:text="@string/input_type"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/input_spinner"
+        app:layout_constraintStart_toStartOf="@+id/input_spinner" />
+
+    <Spinner
+        android:id="@+id/input_spinner"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:alpha="0.7"
+        android:background="@drawable/loginbutton"
+        android:ems="10"
+        android:entries="@array/input_activity_list"
+        android:gravity="center"
+        android:popupBackground="@android:color/transparent"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/history_title"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/activity_view"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="5"
+        android:text="@string/activity_type"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/activity_spinner"
+        app:layout_constraintStart_toStartOf="@+id/activity_spinner"
+        />
+
+    <Spinner
+        android:id="@+id/activity_spinner"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:alpha="0.7"
+        android:background="@drawable/loginbutton"
+        android:dropDownVerticalOffset="10dp"
+        android:ems="10"
+        android:entries="@array/input_activity_list"
+        android:gravity="center"
+        android:popupBackground="@android:color/transparent"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_spinner" />
+
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:alpha="0.7"
+        android:background="@drawable/loginbutton"
+        android:ems="10"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_spinner" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/start_hd_icon_dynamic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

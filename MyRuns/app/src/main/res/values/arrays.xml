@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--used in start spinner-->
+    <string-array name="input_activity_list">
+        <item>Cross-Country Skiing</item>
+        <item>Cycling</item>
+        <item>Downhill Skiing</item>
+        <item>Driving</item>
+        <item>Elliptical</item>
+        <item>Hiking</item>
+        <item>Mountain Biking</item>
+        <item>On Foot</item>
+        <item>Other</item>
+        <item>Running</item>
+        <item>Skating</item>
+        <item>Snowboarding</item>
+        <item>Standing</item>
+        <item>Swimming</item>
+        <item>Tilting</item>
+        <item>Unknown</item>
+        <item>Walking</item>
+        <item>Wheelchair</item>
+    </string-array>
+
+    <!--used in start spinner-->
+    <string-array name="input_spinner_list">
+
+        <item>Automatic</item>
+        <item>GPS</item>
+        <item>Manual Entry</item>
+    </string-array>
+
+    <!--used in settings-->
+
+    <string-array name="unit_preferences_entries">
+        <item>Metric (Kilometers)</item>
+        <item>Imperial (Miles)</item>
+    </string-array>
+
+    <string-array name="unit_values_entries">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+</resources>

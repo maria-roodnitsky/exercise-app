@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="presetLightBlue">#00A5CB</color>
+    <color name="presetDeepBlue">#0190B0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="paletteLightBlue">#c7e8f0</color>
+    <color name="paletteTurquoise">#5bbbd2</color>
+    <color name="textBlue">#00303b</color>
+    <color name="textGrey">#97AFB9</color>
+    <color name="textAccent"> #F69333</color>
+
+
+
+
+</resources>

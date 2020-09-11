@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Application Settings -->
+    <PreferenceCategory android:title="@string/application_settings">
+        <!-- Privacy Settings and Units -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="privacy_setting"
+            android:summary="@string/posting_records"
+            android:title="@string/privacy_settings" />
+
+        <ListPreference
+            android:title="@string/unit_preference"
+            android:summary="@string/unit_summary"
+            android:key="@string/unit_preference"
+            android:defaultValue="@string/unit_kilometers"
+            android:entries="@array/unit_preferences_entries"
+            android:entryValues="@array/unit_values_entries"
+            android:dialogTitle="@string/unit_preference"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/additonal_settings">
+        <PreferenceScreen
+            android:title="@string/webpage_preference"
+            android:summary="@string/webpage_url">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://cs.dartmouth.edu/~campbell/cs65/cs65.html"/>
+        </PreferenceScreen>
+
+        <EditTextPreference
+            android:key="@string/feedback"
+            android:title="@string/feedback"
+            android:summary="@string/feedback_summary">
+
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/account_settings">
+        <PreferenceScreen
+            android:title="@string/edit_profile"
+            android:summary="@string/edit_profile_caption">
+            <intent android:action="com.example.myruns.ACTION_REGISTRATION"/>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="@string/sign_out"
+            android:title="@string/sign_out">
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml for registration activity-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/goldcoast">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/blue_heart"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/change_photo"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="100dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/button"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/change_photo"
+                    android:textColor="@color/white"
+                    android:textSize="8pt"
+                    app:layout_constraintStart_toStartOf="@+id/guideline3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="onChangePhoto"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="205dp"
+                    app:layout_constraintGuide_percent="0.5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_button"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/paletteTurquoise"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="5"
+                    android:text="@string/maleButtonText"
+                    android:textColor="@color/white"
+                    android:textSize="7pt" />
+
+                <RadioButton
+                    android:id="@+id/female_button"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/paletteTurquoise"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="5"
+                    android:text="@string/femaleButtonText"
+                    android:textColor="@color/white"
+                    android:textSize="7pt" />
+
+                <RadioButton
+                    android:id="@+id/nonbinary_button"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/paletteTurquoise"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="5"
+                    android:text="@string/nonBinaryButtonText"
+                    android:textColor="@color/white"
+                    android:textSize="7pt" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:ems="10"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:ems="10"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+
+            <EditText
+                android:id="@+id/major"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/majorHint"/>
+
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/phoneNumber"/>
+
+            <EditText
+                android:id="@+id/class_year"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="@string/classYear"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:alpha="0.7"
+                android:background="@drawable/button"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:onClick="onSubmitClicked"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<!--xml for a selected spinner item in the StartFragment-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:alpha="0.9"
+    android:layout_gravity="center"
+    android:textSize="8pt"
+    android:layout_width="330dp"
+    android:layout_height="60dp"
+    android:background="@drawable/loginbutton"
+    android:fontFamily="sans-serif-smallcaps"
+    android:textColor="@color/white" />
